@@ -26,7 +26,12 @@ for(var i = 1; i < rightAnsw.length; i++){
 
 
 
+// El submit
 
+function formSubmit()
+{
+    form.submit();
+}
 
 
 
