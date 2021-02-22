@@ -10,10 +10,16 @@ const rightAnsw = ["China", "Rusia", "Islandia", "Siria", "Argelia"];
 
 let score = 0;
 
-for(var 1 = 1; i < rightAnsw.length; i++){
-    if(form[question + i]).value = ""){
-        window.alert("La pregunta" + i + "está sin responder");
+// Validador de respuestas correctas y completas
 
+for(var i = 1; i < rightAnsw.length; i++){
+    if(form["question" + i].value = ""){
+        window.alert("Debe responder todas las preguntas");
+        return false;
+    }else{
+        if(form["question" + i].value = rightAnsw[i-1]){
+            return score++;
+        }
     } 
 
 }
