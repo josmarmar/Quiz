@@ -1,32 +1,38 @@
 // -----------------vars&const---------------------------
 
 // El formulario
-let form = document.getElementById(formulario);
+// let form = document.getElementById(formulario);
 
 // Las respuestas correctas son:
-const rightAnsw = ["China", "Rusia", "Islandia", "Siria", "Argelia"];
+// const rightAnsw = ["a14", "a23", "a33", "a44", "a52"];
 
 // Puntos
 
-let score = 0;
+// let score = 0;
 
 // Validador de respuestas correctas y completas
 
 function validator(){
-   
+let form = document.forms["formulario"]; 
+    let question = 5;
+    let score = 0;
+    const rightAnsw = ["a14", "a23", "a33", "a44", "a52"];
 
-for(var i = 1; i <= rightAnsw.length; i++){
+for(var i = 1; i <= question; i++){
     if(form["question" + i].value === "" || form["question" + i].value === null){
         window.alert("Debe responder todas las preguntas");
+        console.log("Has fallado la pregunta " + i)
         return false;
     }else{
         if(form["question" + i].value === rightAnsw[i-1]){
             score++;
-            console.log("AllRite")
+            console.log("Has acertado la pregunta " + i) //No allrite...
         }
     } 
 
 }
+
+window.alert("Has conseguido " + score +"/5");
 return false;
 }
 
@@ -57,12 +63,7 @@ return false;
 
 
 
-// El total de puntos se verá en la parte inferior de la página
 
-let total = document.getElementById("total")
-// total.innerHTML pero representado en el DOM de forma pro.
-
-window.alert("Has conseguido " + score +"/5");
 
 
 
