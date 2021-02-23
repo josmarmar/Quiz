@@ -13,11 +13,14 @@ for(var i = 1; i <= question; i++){
     }else{
         if(form["question" + i].value === rightAnsw[i-1]){
             score++;
-            console.log("Has acertado la pregunta " + i) //No allrite...
+            console.log("Has acertado la pregunta " + i) 
         }
     } 
 
 }
+
+
+
 
 window.alert("Has conseguido " + score +"/5");
 return false;
