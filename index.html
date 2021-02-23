@@ -5,24 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSQuiz</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <form name="formulario" method="POST" id="formulario">
+    <form name="formulario" method="POST" id="formulario" onsubmit="return validator()">
 
-        <h2>¿Cuál es el país más poblado?</h2>
+        <h2 class="q">¿Cuál es el país más poblado?</h2>
         <input type="radio" name="question1" value="India"><h3>India</h3>
         <input type="radio" name="question1" value="Paquistán"><h3>Paquistán</h3>
         <input type="radio" name="question1" value="Estados Unidos"><h3>Estados Unidos</h3>
         <input type="radio" name="question1" value="China"><h3>China</h3>
     
-        <h2>¿Cuál es el país más grande?</h2>
+        <h2 class="q">¿Cuál es el país más grande?</h2>
         <input type="radio" name="question2" value="Canada"><h3>Canadá</h3>
         <input type="radio" name="question2" value="China"><h3>China</h3>
         <input type="radio" name="question2" value="Rusia"><h3>Rusia</h3>
         <input type="radio" name="question2" value="Brasil"><h3>Brasil</h3>
         
-        <h2>¿Cuál es el país más seguro?</h2>
+        <h2 class="q">¿Cuál es el país más seguro?</h2>
         <input type="radio" name="question3" value="a31"><h3>Portugal</h3>
         <input type="radio" name="question3" value="a32"><h3>Suiza</h3>
         <input type="radio" name="question3" value="a33"><h3>Islandia</h3>
@@ -34,13 +34,13 @@
         <input type="radio" name="question4" value="a43"><h3>Afganistán</h3>
         <input type="radio" name="question4" value="a44"><h3>Siria</h3>
         
-        <h2>¿Cuál es el país más cálido?</h2>
+        <h2 class="q">¿Cuál es el país más cálido?</h2>
         <input type="radio" name="question5" value="a51"><h3>India</h3>
         <input type="radio" name="question5" value="a52"><h3>Arabia Saudí</h3>
         <input type="radio" name="question5" value="a53"><h3>México</h3>
         <input type="radio" name="question5" value="a54"><h3>Argelia</h3>
     
-        <input  id="submitbtn" type="submit" value="submit">
+        <input type="submit" id="submitbtn" value="submit">
 
 
     </form>
