@@ -1,3 +1,44 @@
+@media screen and (min-width: 767px){
+
+    body {
+       background-color: whitesmoke;
+   } 
+       
+   .txt {
+       position: relative; 
+       text-align: center;
+       font-size: 60pt;
+       margin-top: 15%;
+       font-family: 'Press Start 2P', cursive;
+       animation: blink 0.75s infinite;
+   }
+       
+   .btntxt {
+       position: absolute;   
+       margin-left: 43%;
+       margin-top: 15pt; 
+       border: 1pt solid black;
+       padding: 2%; 
+       background: rgb(255, 251, 0); 
+       font-size: 20pt; 
+       font-family: 'Press Start 2P', cursive; 
+       text-decoration: none; 
+           
+   }
+       
+   #vsia {
+       margin-top: 95%;
+   } 
+       
+       
+   
+   @keyframes  blink {
+       from {opacity: 1.0;}
+       to {opacity: 0.0;} 
+   }}
+
+@media screen and (max-width: 768px){
+
 body {
     background-color: whitesmoke;
 }
@@ -5,7 +46,7 @@ body {
 .txt {
     position: relative;
     text-align: center;
-    font-size: 60pt;
+    font-size: 30pt;
     margin-top: 15%;
     font-family: 'Press Start 2P', cursive;
     animation: blink 0.75s infinite;
@@ -13,7 +54,7 @@ body {
 
 .btntxt {
     position: absolute;    
-    margin-left: 43%;
+    margin-left: 35%;
     margin-top: 15pt;
     border: 1pt solid black;
     padding: 2%;
@@ -24,7 +65,55 @@ body {
     
 }
 
-@keyframes blink {
+#vsia {
+    margin-top: 95%;
+
+}
+@keyframes  blink {
     from {opacity: 1.0;}
     to {opacity: 0.0;}
+}
+
+
+
+
+@media screen and (min-width: 1366px){
+    body {
+        background-color: whitesmoke;
+    }
+        
+    .txt {
+        position: relative;
+        text-align: center;
+        font-size: 60pt;
+        margin-top: 15%;
+        font-family: 'Press Start 2P', cursive;
+        animation: blink 0.75s infinite;
+    }
+        
+    .btntxt {
+        position: absolute;    
+        margin-left: 43%;
+        margin-top: 15pt;
+        border: 1pt solid black;
+        padding: 2%;
+        background: rgb(255, 251, 0);
+        font-size: 20pt;
+        font-family: 'Press Start 2P', cursive;
+        text-decoration: none;
+            
+    }
+        
+    #vsia {
+        margin-top: 95%;
+        
+    } 
+        
+    
+    @keyframes  blink {
+        from {opacity: 1.0;}
+        to {opacity: 0.0;}
+    } 
+
+}
 }

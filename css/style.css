@@ -1,10 +1,88 @@
 
 
-
-
-
-
 @media screen and (max-width: 768px){
+
+
+.q {
+    text-align: center;
+    background:rgb(131, 160, 252);
+}
+
+.awrapper {
+    text-align: center;
+
+}}
+
+@media screen and (min-width: 768px){
+
+.q {
+    text-align: center;
+    background: #db7483;
+}   
+
+.awrapper {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
 
 
 body {
@@ -24,10 +102,7 @@ body {
     justify-content: space-around;
 }
 
-.a {
-    display: none;
 
-}
 
 label{
     color:#ce6fd6;
@@ -36,19 +111,9 @@ label{
     border-radius: 15%;
 }
 
-label:checked {
-    background:rgb(131, 160, 252) ;
 
 }
-  }
 
-/* .right {
-    background: rgb(8, 241, 8);
-}
-
-.wrong {
-    background: red;
-} */
 
 @media screen and (min-width: 768px){
 
@@ -63,6 +128,7 @@ label:checked {
         background:rgb(131, 160, 252);
         margin-top: 15%;
     }
+
     
     .awrapper {
         display: flex;
@@ -73,7 +139,7 @@ label:checked {
     .a {
         margin-top: 2.5%;
         display: none;
-    
+        animation: shake 1s;        
     }
     
     label{
@@ -83,26 +149,39 @@ label:checked {
         border-radius: 15%;
     }
     
-    label:checked {
-        background:rgb(131, 160, 252) ;
     
-    }
-
 }
 @media screen and (min-width: 1366px){
       
-    
-    @keyframes shake {
-        0% { transform: translateX(3px);}
-        20% { transform: translateX(-3px);}
-        40% { transform: translateX(3px);}
-        60% { transform: translateX(-3px);}
-        80% { transform: translateX(3px);}
-        100% { transform: translateX(-3px);}
-
+    body {
+        background:whitesmoke;
+        padding: 0;
+        margin: 0;
     }
+    
+    .q {
+        text-align: center;
+        background:rgb(131, 160, 252);
+    }
+    
+    .awrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+    
+    
+    
+    label{
+        color:#ce6fd6;
+        border: 3px solid #db7483;
+        padding: 1.5%;
+        border-radius: 15%;
+    }
+    
+    
+    }
+    
 
 
-
-
-}
+ */

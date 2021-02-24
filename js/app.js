@@ -1,4 +1,5 @@
 
+
 function validator(){
 let form = document.forms["formulario"]; 
     let question = 5;
@@ -10,6 +11,7 @@ for(var i = 1; i <= question; i++){
         window.alert("Debe responder todas las preguntas");
         
         return false;
+        
     }else{
         if(form["question" + i].value === rightAnsw[i-1]){
             score++;
